@@ -1,19 +1,16 @@
-* {
-  font-family: "Inter";
-}
-
 #cabecalho {
   display: flex;
-  width: 100%;
   align-items: center;
-  background-color: #FFF;
-  border-radius: .7rem .7rem 0 0;
-  box-shadow: 0px 0px 1em #FFF;
+
+  width: 100%;
   height: 4rem;
-  position: sticky;
+
+  background-color: var(--white);
+  border-radius: .7rem .7rem 0 0;
+  box-shadow: 0px 0px 1em var(--white);
+  position: fixed;
   z-index: 999;
 }
-
 
 /*Button*/
 
@@ -37,11 +34,11 @@
 
 #navegation a {
   font-size: 1rem;
-  color: #6C5CE7;
+  color: var(--purple-text);
 }
 
 #navegation a:nth-child(1) {
-  color: #2D3436;
+  color: var(--dark-gray);
   font-weight: bold;
 }
 
@@ -53,9 +50,9 @@
 }
 
 #register > a {
-  color: #FFF;
+  color: var(--white);
   padding: .75rem 1.5rem;
-  background-color: #2D3436;
+  background-color: var(--dark-gray);
   border-radius: 1000px;
   font-weight: 600;
   transition: padding 1s;
@@ -82,6 +79,21 @@
 #grid-header:hover,
 #logo-img:hover {
   cursor: pointer;
+}
+
+.separator {
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  box-shadow: 0 1px 1.4px .6px #00000033;
 }
 
 @media (max-width: 1250px) {

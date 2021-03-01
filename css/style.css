@@ -2,6 +2,13 @@
   font-family: "Inter";
 }
 
+:root {
+  --white: #FFF;
+  --purple-text: #6C5CE7;
+  --gray: #ADADAD;
+  --dark-gray: #2D3436;
+}
+
 body {
   background-color: #9088FA;
   margin: 0;
@@ -12,13 +19,42 @@ body {
   background-color: #FFF;
 }
 
-.separator {
-  position: relative;
-  z-index: 999;
+ul {
+  padding: 0;
 }
 
-hr {
-  margin: 0;
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.normal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  border: solid 1px var(--gray);
+  padding: 1.25rem 0;
+
+  font-size: 1.25rem;
+  color: var(--purple-text);
+  font-weight: 600;
+}
+
+.purple-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
   border: 0;
-  box-shadow: 0 1px 1.4px .6px #00000033;
+  background-color: var(--purple-text);
+
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 600;
 }

@@ -13,15 +13,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <title>Grid</title>
 </head>
+
 <body>
   <header id="cabecalho">
+
       <div id="logo-img">
         <img src="./images/icon.svg" alt="Logo do site">
       </div>
+
       <div id="expand-menu">
         <img src="./images/expand-menu.svg" alt="Expandir menu">
       </div>
+
       <span id="grid-header">Grid</span>
+
       <nav id="navegation">
         <a href="" class="button">Como funciona</a>
         <img src="./images/separator-menu.svg" alt="">
@@ -31,14 +36,17 @@
         <img src="./images/separator-menu.svg" alt="">
         <a href="" class="button">Contate-nos</a>
       </nav>
+
       <div id="register">
         <a href="" class="button">Registre-se</a>
       </div>
+
+      <div class="separator">  
+        <hr>
+      </div>
+
     </header>
 
-    <div class="separator">  
-      <hr>
-    </div>
 
   <main id="container">
     <section id="apresentation">
@@ -101,23 +109,111 @@
     </section>
 
     <section id="affordable-pricing">
-
-      <div id="title-affordible">
+      <div class="affordable-pricing-header">
         <h2>Preços acessíveis</h2>
-        <h3>Me fature <em>mensalmente</em> <span class="dot-gray"></span> anualmente</h3>
+
+        <div>
+          <span>Fature-me &nbsp</span>
+          <strong>mensalmente</strong>
+
+          <div>
+            <span class="gray-dot"></span>
+          </div>
+
+          <span>anualmente</span>
+        </div>
+
       </div>
 
-      <div id="prices">
+      <div class="affordable-pricing-container">
+        <div class="basic">
+          <h3 class="title">Básico</h3>
+          <strong class="price">Grátis</strong>
+          <span class="time">/Sempre</span>
 
-        <div id="like-a-pussy"></div>
+          <ul>
+            <li>
+              <img draggable="false" src="./images/basic-check.svg">
+              Sistema acionado por componentes
+            </li>
 
-        <div id="individual"></div>
+            <li>
+              <img draggable="false" src="./images/basic-check.svg">
+              Páginas de destino que aumentam as vendas
+            </li>
 
-        <div id="corporate"></div>
+            <li>
+              <img draggable="false" src="./images/basic-check.svg">
+              Pacote incrível de ícones Feather
+            </li>
+          </ul>
+        </div>
 
+        <div>
+          <div class="individual">
+            <h3 class="title">
+              <span>👤Individual</span>
+              <a class="buttonIndividual" href="">Melhor!</a>
+            </h3>
+
+            <strong class="price"></strong>
+            <span class="time">/mês</span>
+
+            <ul>
+              <li>
+                <img draggable="false" src="./images/individual-check.svg">
+                Sistema acionado por componentes
+              </li>
+  
+              <li>
+                <img draggable="false" src="./images/individual-check.svg">
+                Páginas de destino que aumentam as vendas
+              </li>
+  
+              <li>
+                <img draggable="false" src="./images/individual-check.svg">
+                Pacote incrível de ícones Feather
+              </li>
+
+              <li>
+                <img draggable="false" src="./images/individual-check.svg">
+                Temáticos em 3 estilos diferentes
+              </li>
+
+              <li>
+                <img draggable="false" src="./images/individual-check.svg">
+                Ajudará a aprender Figma
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div></div>
+        
+        <a class="normal-button basic" href="">Experimente gratuitamente</a>
+        <a class="purple-button individual" href="">Licença regular</a>
+        <a class="normal-button" href="">Experimente gratuitamente</a>
       </div>
-
     </section>
   </main>
 </body>
 </html>
+
+<script>
+  function convertMoney(unityMonetary, money) {
+    switch(unityMonetary) {
+      case "$":
+        money = `$ ${money}`
+        break
+      case "R$":
+        money = `R$ ${money * 4}`
+        break
+      default:
+        money = `A definir`
+    }
+    return money
+  }
+
+  const individual = document.querySelector(".individual .price")
+  individual.innerHTML = convertMoney("R$", 24)
+</script>

@@ -1,28 +1,142 @@
 #affordable-pricing {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
 }
 
-#title-affordible > h2 {
-  font-size: 40px;
-  font-weight: 900;
+.affordable-pricing-header {
+  width: 100%;
+  max-width: 900px;
 }
 
-#title-affordible > h3 {
+.affordable-pricing-header > h2 {
+  text-align: center;
+  color: var(--dark-gray);
+  font-size: 4rem;
+  font-weight: 700;
+
+  margin-bottom: 2rem;
+}
+
+.affordable-pricing-header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: #ADADAD;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  position: relative;
+  width: 100%;
+
+  margin: 0 auto
 }
 
-#title-affordible em {
-  color: #6C5CE7;
-  font-style: normal;
+.affordable-pricing-header div strong {
+  color: var(--purple-text);
+  position: relative;
 }
 
-#title-affordible .dot-gray::before {
-  align-self: center;
-  background-color: khaki;
-  color: #ADADAD;
-  height: 30px;
+.affordable-pricing-header div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  width: 2rem;
+}
+
+.gray-dot {
   position: absolute;
-  width: 30px;
+
+  height: .35rem;
+  width: .35rem;
+
+  transform: translateY(25%);
+  border-radius: 100%;
+  background-color: #ADADAD;
+}
+
+/*Container*/
+
+.affordable-pricing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3fr .5fr;
+  gap: 2rem;
+
+  margin-top: 2rem;
+  width: 70%;
+}
+
+.affordable-pricing-container .title {
+  color: var(--purple-text);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.affordable-pricing-container .individual .title  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.affordable-pricing-container .price {
+  font-size: 3rem;
+  margin-right: .2rem;
+}
+
+.affordable-pricing-container .time {
+  font-weight: 900;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.affordable-pricing-container ul {
+  margin-top: 2rem;
+}
+
+.affordable-pricing-container li {
+  display: flex;
+  align-items: center;
+
+  margin: 1rem 0;
+
+  font-weight: 200;
+}
+
+.affordable-pricing-container li img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+a.basic {
+  width: 100%;
+}
+
+a.individual {
+  width: 100%;
+}
+
+.buttonIndividual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--purple-text);
+  border-radius: 35px;
+  width: 10%;
+
+  margin-right: 2rem;
+  padding: 1rem 2.5rem;
+
+  text-transform: uppercase;
+  color: black;
+  font-size: 1rem;
+  font-weight: 800;
 }
