@@ -1,0 +1,28 @@
+#affordable-pricing {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#title-affordible > h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#title-affordible > h3 {
+  color: #ADADAD;
+}
+
+#title-affordible em {
+  color: #6C5CE7;
+  font-style: normal;
+}
+
+#title-affordible .dot-gray::before {
+  align-self: center;
+  background-color: khaki;
+  color: #ADADAD;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
