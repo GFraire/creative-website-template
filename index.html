@@ -114,7 +114,11 @@
 
         <div>
           <span>Fature-me &nbsp</span>
-          <strong>mensalmente</strong>
+
+          <span class="relative-span">
+            <span></span>
+            <strong>mensalmente</strong>
+          </span>
 
           <div>
             <span class="gray-dot"></span>
@@ -122,21 +126,23 @@
 
           <span>anualmente</span>
         </div>
-
       </div>
-
+      
       <div class="affordable-pricing-container">
         <div class="basic">
           <h3 class="title">Básico</h3>
-          <strong class="price">Grátis</strong>
-          <span class="time">/Sempre</span>
 
+          <span>
+            <strong class="price">Grátis</strong>
+            <span class="time">/Sempre</span>
+          </span>
+          
           <ul>
             <li>
               <img draggable="false" src="./images/basic-check.svg">
               Sistema acionado por componentes
             </li>
-
+            
             <li>
               <img draggable="false" src="./images/basic-check.svg">
               Páginas de destino que aumentam as vendas
@@ -147,53 +153,91 @@
               Pacote incrível de ícones Feather
             </li>
           </ul>
+
+          <a class="normal-button basic-button" href="">Experimente gratuitamente</a>
         </div>
 
-        <div>
-          <div class="individual">
-            <h3 class="title">
-              <span>👤Individual</span>
-              <a class="buttonIndividual" href="">Melhor!</a>
-            </h3>
-
+        <div class="individual box-shadow">
+          <h3 class="title">
+            <span>👤 Individual</span>
+            <a class="buttonIndividual" href="">Melhor!</a>
+          </h3>
+          <span>
             <strong class="price"></strong>
             <span class="time">/mês</span>
+          </span>
 
-            <ul>
-              <li>
-                <img draggable="false" src="./images/individual-check.svg">
-                Sistema acionado por componentes
-              </li>
-  
-              <li>
-                <img draggable="false" src="./images/individual-check.svg">
-                Páginas de destino que aumentam as vendas
-              </li>
-  
-              <li>
-                <img draggable="false" src="./images/individual-check.svg">
-                Pacote incrível de ícones Feather
-              </li>
+          <ul>
+            <li>
+              <img draggable="false" src="./images/individual-check.svg">
+              Sistema acionado por componentes
+            </li>
 
-              <li>
-                <img draggable="false" src="./images/individual-check.svg">
-                Temáticos em 3 estilos diferentes
-              </li>
+            <li>
+              <img draggable="false" src="./images/individual-check.svg">
+              Páginas de destino que aumentam as vendas
+            </li>
 
-              <li>
-                <img draggable="false" src="./images/individual-check.svg">
-                Ajudará a aprender Figma
-              </li>
-            </ul>
-          </div>
+            <li>
+              <img draggable="false" src="./images/individual-check.svg">
+              Pacote incrível de ícones Feather
+            </li>
+
+            <li>
+              <img draggable="false" src="./images/individual-check.svg">
+              Temáticos em 3 estilos diferentes
+            </li>
+
+            <li>
+              <img draggable="false" src="./images/individual-check.svg">
+              Ajudará a aprender Figma
+            </li>
+          </ul>
+
+          <a class="purple-button individual-button" href="">Licença regular</a>
         </div>
 
-        <div></div>
-        
-        <a class="normal-button basic" href="">Experimente gratuitamente</a>
-        <a class="purple-button individual" href="">Licença regular</a>
-        <a class="normal-button" href="">Experimente gratuitamente</a>
+        <div class="corporate">
+          <h3 class="title">👥 Corporativo</h3>
+
+          <span>
+            <strong class="price"></strong>
+            <span class="time">/Editora</span>
+          </span>
+
+          <ul>
+            <li>
+              <img draggable="false" src="./images/corporate-check.svg">
+              Sistema acionado por componentes
+            </li>
+
+            <li>
+              <img draggable="false" src="./images/corporate-check.svg">
+              Páginas de destino que aumentam as vendas
+            </li>
+
+            <li>
+              <img draggable="false" src="./images/corporate-check.svg">
+              Pacote incrível de ícones Feather
+            </li>
+
+            <li>
+              <img draggable="false" src="./images/corporate-check.svg">
+              Temáticos em 3 estilos diferentes
+            </li>
+          </ul>
+
+          <a class="normal-button corporate-button" href="">Licença extendida</a>
+        </div>
+
       </div>
+    </section>
+
+    <section id="about-us">
+      <div>
+        <h3>Apresentando bons designs desde 1954 🚚💨</h3>
+      </div>
+      <div></div>
     </section>
   </main>
 </body>
@@ -215,5 +259,8 @@
   }
 
   const individual = document.querySelector(".individual .price")
+  const corporate = document.querySelector(".corporate .price")
+
   individual.innerHTML = convertMoney("R$", 24)
+  corporate.innerHTML = convertMoney("R$", 12)
 </script>
